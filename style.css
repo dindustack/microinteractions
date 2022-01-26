@@ -17,6 +17,7 @@ body {
 
 .list {
   display: flex;
+  gap: 6px;
 }
 
 .list .user {
@@ -65,4 +66,41 @@ body {
   color: rgba(0, 0, 0, 0.6);
 }
 
-/* start here */
+.navigation {
+  position: relative;
+  width: 40px;
+  height: 70px;
+  background: #777;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation.active {
+  width: 200px
+} 
+
+.navigation span {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #222327;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.navigation span:nth-child(1) {
+  transform: translateY(-12px);
+}
+
+.navigation span:nth-child(3) {
+  transform: translateY(12px);
+}
+
+.navigation.active span {
+  width: 50px;
+  height: 50px;
+}
