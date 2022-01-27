@@ -70,7 +70,7 @@ body {
   position: relative;
   width: 40px;
   height: 70px;
-  background: #777;
+  background: #FFF;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.5s;
@@ -103,4 +103,17 @@ body {
 .navigation.active span {
   width: 50px;
   height: 50px;
+}
+
+/* .navigation.active span:nth-child(1),
+.navigation.active span:nth-child(3) {
+  transform: translateY(0);
+} */
+
+.navigation.active span:nth-child(1) {
+  transform: translateY(0) translateX(-60px);
+}
+
+.navigation.active span:nth-child(3) {
+  transform: translateY(0) translateX(60px);
 }
